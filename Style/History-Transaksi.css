@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    background-image: url(../image/Background-Edit-Profilw.png);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #141414;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+  .navbar .brand {
+    color: #F8837A;
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+  }
+  .navbar .nav {
+    display: flex;
+    gap: 80px;
+  }
+  .navbar .nav > div {
+    color: #FEFFFE;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .navbar .nav div:hover {
+    text-decoration: underline;
+  }
+  .navbar .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar .actions img {
+    cursor: pointer;
+  }
+  .navbar .actions .divider {
+    width: 2px;
+    height: 30px;
+    background: white;
+  }
+  .navbar .actions .shopping {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FEFFFE;
+  }
+  
+  .navbar .actions .shopping img {
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Mengubah arah flex menjadi kolom */
+      align-items: flex-start;
+    }
+    .navbar .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .navbar .actions {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+
+
+  .TransaksiPage {
+    margin: 60px 0px;
+    padding: 20px 60px 60px 60px;
+    background: #141414;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .EditProfile {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 42px;
+    display: inline-flex;
+  }
+  
+  .Frame139 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+    display: flex;
+  }
+  
+  .ProfilePage {
+    padding-bottom: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    backdrop-filter: blur(40px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: flex;
+  }
+  
+  .PageHeadline {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #434343;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 260px;
+    display: inline-flex;
+  }
+  
+  .UserProfile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+  }
+  
+  .Group2 {
+    width: 218.88px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .Ellipse1 {
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #D9D9D9;
+    border-radius: 9999px;
+  }
+  
+  .Username {
+    left: 126.88px;
+    top: 14px;
+    position: absolute;
+    text-align: center;
+    color: #FEFFFE;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  
+  .TransactionPage {
+    padding-left: 12px;
+    color: #FEFFFE;
+    padding-right: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+  
+  .PageBody {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+    display: flex;
+  }
+
+  
+  .Body-Box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+  }
+  
+  .DaftarProduct {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+  }
+  
+  .Label {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+  }
+  
+  .NamaProduk {
+    color: #FEFFFE;
+    font-size: 16px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.10px;
+    word-wrap: break-word;
+  }
+
+  .IdProduct {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 12px;
+    border: 1px #FEFFFE solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    display: flex;
+
+}
+
+.ProductValue {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 56px;
+    opacity: 0.64;
+    border-bottom: 1px #FEFFFE solid;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    display: inline-flex;
+
+}
+
+.LabelNameProduct {
+    height: 16px;
+    padding-right: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display:flex;
+}
+
+.PriceProduct {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    display: flex;
+}
+
+.LinePriceProduct {
+    width: 0px;
+    height: 20px;
+    position: relative;
+    border: 0.50px #FEFFFE solid;
+}
+
+.LabelSmall {
+    color: #FEFFFE;
+    width: 300px;
+    font-size: 14px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 16px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.TextPrice {
+  color: #FEFFFE; 
+  font-size: 14px;
+  font-family: Segoe UI;
+  font-weight: 600;
+  line-height: 16px;
+   word-wrap: break-word
+}
+
+  
+  .Category {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+  }
+
+
+  .Label-Category {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+    color: #FEFFFE;
+    font-size: 16px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.10px;
+    word-wrap: break-word;
+}
+
+
+  
+  
+  .Id {
+    padding-left: 24px;
+    padding-right: 10px;
+    border-radius: 12px;
+    border: 1px #FEFFFE solid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+  }
+  
+  .ValueLabel {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    display: inline-flex;
+  }
+
+  
+  .LabelSmallText {
+    width: 92px;
+    color: #FEFFFE;
+    font-size: 14px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 16px;
+    word-wrap: break-word;
+  }
+
+  
+  .ValueUser {
+    width: 469px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-left: 1px #FEFFFE solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+  }
+  
+  .TextBox {
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+  
+  .BodyMedium {
+    color: #FEFFFE;
+    font-size: 14px;
+    font-family: Segoe UI;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  
+  .Button {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #F8837A;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+
+    color: white;
+    font-size: 16px;
+    font-family: Segoe UI;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.10px;
+    word-wrap: break-word;
+  }
+
+  .Button:hover {
+    background: #ffffff;
+    color: #141414; 
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style saat tombol ditekan */
+.Button:active {
+    background: #434343;
+    color: #ffffff;
+    transform: scale(1);
+}
+
+  

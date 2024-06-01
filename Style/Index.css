@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #434343;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #141414;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+.navbar .brand {
+  color: #F8837A;
+  font-size: 32px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+.navbar .nav {
+  display: flex;
+  gap: 80px;
+}
+.navbar .nav > div {
+  color: #FEFFFE;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar .nav div:hover {
+  text-decoration: underline;
+}
+.navbar .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .actions img {
+  cursor: pointer;
+}
+.navbar .actions .divider {
+  width: 2px;
+  height: 30px;
+  background: white;
+}
+.navbar .actions .shopping {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FEFFFE;
+}
+
+.navbar .actions .shopping img {
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom */
+    align-items: flex-start;
+  }
+  .navbar .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .navbar .actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+
+.LandingPage {
+    width: 1200px;
+    height: 2996px;
+    background-image: url(../image/Background-Landing-page.png);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+    /* width: 100%;
+    height: 100vh;
+    background-image: url(../image/Background-Login-Page.png);
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.Frame160 {
+    padding-top: 56px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    display:inline-flex;
+}
+
+.Section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 141px;
+    display: inline-flex;
+
+}
+
+
+/* High Section */
+.HighSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    display: flex;
+}
+
+/* Hero Section */
+.HeroSection {
+    padding-top: 11px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
+
+.HeroSectionBody {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    display: inline-flex;
+}
+
+.HeroSectionBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    display: inline-flex;
+}
+
+.SectionBoxHeader {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    display: flex;
+}
+
+.Logo-Text {
+    text-align: center;
+    color: #F8837A;
+    font-size: 44px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 70px;
+    word-wrap: break-word;
+}
+
+.Subheadline {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
+
+.HeadlineMedium {
+    color: #FEFFFE;
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 44px;
+    word-wrap: break-word;
+}
+
+.HeadlineSmall {
+    width: 411px;
+    color: #F8837A;
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+.HeadlineSmalls {
+    width: 411px;
+    color: #F8837A;
+    font-size: 24px;
+    font-family: 'Coiny', cursive;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.CallToAction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    display: flex;
+}
+
+.SocialMedia {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.Logo {
+    width: 72px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* background: #A2A3B1; */
+}
+
+.HeroAccesories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.Decorasi {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Line {
+    width: 3px;
+    height: 120px;
+    position: relative;
+    background: #F8837A;
+}
+
+.Image {
+    width: 350px;
+    height: 300px;
+}
+
+.ScrollDown {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.ButtonJoin {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: #F8837A;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    cursor: pointer; 
+
+}
+
+.ButtonJoin:hover {
+    background-color: #141414;
+    border: 2px solid #F8837A; 
+    transform: scale(1.05); 
+}
+
+.ButtonJoin:active {
+    background-color: #FEFFFE; 
+    transform: scale(0.95); 
+}
+
+.ButtonJoin:hover .TitleMedium {
+    color: #FEFFFE; 
+}
+
+.TitleMedium {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    word-wrap: break-word;
+}
+
+.TitleSmall {
+    text-align: center;
+    color: #141414;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.LargeLogo {
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Hero Section end */
+
+
+/* Features Section Start */
+.FeaturesSection {
+    padding-top: 32px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 26px;
+    display: flex;
+}
+
+.HeadlineFeatures {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.HeadlineMedium {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 44px;
+    word-wrap: break-word;
+}
+
+.Feature {
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+}
+
+.BoxFeature {
+    justify-content: center;
+    align-items: center;
+    gap: 115px;
+    display: inline-flex;
+}
+
+.ImageFeature {
+    width: 270px;
+    height: 194px;
+    position: relative;
+    background: white;
+    border-radius: 40px;
+}
+
+.TextFeature {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.TitleLarge {
+    text-align: center;
+    color: #F8837A;
+    font-size: 34px;
+    font-family: 'Coiny', cursive;
+    font-weight: 400;
+    line-height: 55px;
+    word-wrap: break-word;
+}
+
+.BodyLarge {
+    width: 437px;
+    height: 96px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+
+/* feaure Section End */
+
+/* DashBoard Section */
+
+.BottomSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    display: flex;
+}
+
+.DashboardSection {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+}
+
+.HeadlineLarge {
+    text-align: center;
+    color: #F8837A;
+    font-size: 44px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 56px;
+    word-wrap: break-word;
+}
+
+.BoxDashboard {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.ItemDashboard {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    display: inline-flex;
+}
+
+.BodyDashboard {
+    padding: 12px 24px;
+    background: #727272;
+    border-radius: 24px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border 0.3s, transform 0.2s;
+}
+
+.LogoDashboard {
+    width: 200px;
+    height: 190px;
+    border-radius: 24px;
+}
+
+.BodyDashboard:hover {
+    background-color: #141414;
+    border: 1px solid #F8837A;
+    transform: scale(1.05);
+}
+
+.BodyDashboard:hover .Card {
+    content: url('../image/Dashboard-Card-Hover.png'); /* Mengganti gambar saat hover */
+}
+
+.BodyDashboard:hover .Produk {
+    content: url('../image/dashboard-Shop-Hover.png'); /* Mengganti gambar saat hover */
+}
+
+.BodyDashboard:hover .User {
+    content: url('../image/Dashboard-User-Hover.png'); /* Mengganti gambar saat hover */
+}
+
+
+
+.BodyDashboard:active {
+    background-color: #F8837A; 
+    transform: scale(0.95); 
+}
+
+
+
+.TitleMedium {
+    text-align: center;
+    color: #141414;
+    font-size: 24px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    word-wrap: break-word;
+    transition: color 0.3s;
+}
+
+.BodyDashboard:hover .TitleMedium {
+    color: #FEFFFE; 
+}
+
+.SectionDashboard {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #141414;
+    border-radius: 16px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: inline-flex;
+}
+
+.Decorasi {
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Decorasi div {
+    width: 90px;
+    height: 90px;
+    background: #434343;
+}
+
+.TextSectionDashboard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.TitleSmall {
+    text-align: center;
+    color: #FEFFFE;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+.HeadlineMedium {
+    text-align: center;
+    color: #FEFFFE;
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 44px;
+    word-wrap: break-word;
+}
+
+
+/* Dashboard Section end */
+
+/* StakeHolders Section */
+.StakeholdersSection {
+    width: 988px;
+    height: 616px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 90px;
+    display: inline-flex;
+}
+
+.HeaderStakeholders {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.HeadlineMedium {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    line-height: 44px;
+    word-wrap: break-word;
+}
+
+.BodyStakeholders {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+}
+
+.ContainerStakeholders {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: inline-flex;
+}
+
+.ImageStakeholders {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    background: white;
+    border-radius: 32px;
+}
+
+.LabelName {
+    width: 324px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #434343;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+}
+
+
+/* Stakeholders Section End */
+
+/* Footer Section */
+
+.FooterSection {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    display: flex;
+}
+
+.FooterLinks {
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+}
+
+.Home, .KategoriKami, .TentangKami, .SyaratKetentuan, .KebijakanPrivasi {
+    text-align: center;
+    color: #141414;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.40px;
+    word-wrap: break-word;
+}
+
+.FooterBody {
+    justify-content: center;
+    align-items: center;
+    gap: 212px;
+    display: inline-flex;
+}
+
+.FooterSocialmedia {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 27px;
+    display: flex;
+}
+
+.LogoMedium {
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.Rectangle22 {
+    width: 64px;
+    height: 64px;
+}
+
+.FooterContact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+    display: inline-flex;
+}
+
+.LabelLarge {
+    text-align: center;
+    color: #141414;
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.40px;
+    word-wrap: break-word;
+}

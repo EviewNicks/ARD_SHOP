@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #141414; */
+    background-color: #141414;
+    background-image: url(../image/Background-MarketPlace.png);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: #141414;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+.navbar .brand {
+  color: #F8837A;
+  font-size: 32px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+.navbar .nav {
+  display: flex;
+  gap: 80px;
+}
+.navbar .nav > div {
+  color: #FEFFFE;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar .nav div:hover {
+  text-decoration: underline;
+}
+.navbar .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .actions img {
+  cursor: pointer;
+}
+.navbar .actions .divider {
+  width: 2px;
+  height: 30px;
+  background: white;
+}
+.navbar .actions .shopping {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FEFFFE;
+}
+
+.navbar .actions .shopping img {
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Mengubah arah flex menjadi kolom */
+    align-items: flex-start;
+  }
+  .navbar .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .navbar .actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+
+  
+  .EditProfilePage8 {
+    margin-top: 60px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 17px;
+  }
+  
+  .ContainerHead {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 480px;
+  }
+  
+  .HeaderText {
+    width: 213px;
+    height: 80px;
+    text-align: center;
+    color: #FEFFFE;
+    font-size: 44px;
+    font-family: 'Abril Fatface', serif;
+    font-weight: 400;
+    line-height: 70px;
+  }
+
+  .container-Button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .Button {
+    padding: 6px 32px;
+    background: #F8837A;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    color: #FEFFFE;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.10px;
+  }
+
+  .Button:hover, .ButtomPesan:hover {
+    background: #ffffff;
+    color: #141414; 
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style saat tombol ditekan */
+.Button:active, .ButtomPesan:active {
+    background: #434343;
+    color: #ffffff;
+    transform: scale(1);
+}
+
+  
+  .BoxContainer {
+    width: 952px;
+    /* height: 968px;
+    display: inline-flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  
+  .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .TextTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 12px;
+  }
+  
+  .Title {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+  }
+  
+  .ContainerBox {
+    width: 100%;
+    max-width: 1004px;
+    padding: 12px 24px;
+    border-top: 2px solid #FEFFFE;
+    /* border : 1px solid #f88374; */
+    border-bottom: 2px solid #FEFFFE;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  /* Sembunyikan penunjuk scroll bar */ 
+.ContainerBox::-webkit-scrollbar { 
+  width: 0; 
+  background: transparent; 
+}
+
+
+.ContainerBox::-webkit-scrollbar-thumb {
+  display: none; 
+} 
+
+.ContainerBox::-webkit-scrollbar-track {
+  display: none; 
+}
+  
+  .Product {
+    padding: 8px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    border: 1px solid #F8837A;
+    backdrop-filter: blur(40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 0 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+  }
+
+  .Section-Product {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    gap: 12px; 
+    display: flex
+  }
+  
+  .Heading {
+    color: #FFFDFF;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+  
+  .BodyProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .Container .Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .ImageProduct {
+    width: 100px;
+    height: 76px;
+    background: #727272;
+    border-radius: 4px;
+  }
+  
+  .Description {
+    width: 150px;
+    height: 59px;
+    text-align: center;
+    color: #FFFDFF;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+  
+  .ProductIdentity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .PriceProduct,
+  .StockProduct {
+    color: #FFFDFF;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .PriceProduct {
+    font-weight: 500;
+  }
+  
+  .StockProduct {
+    font-weight: 400;
+  }
+  
+  .ButtomPesan {
+    padding: 8px 30px;
+    background: #F8837A;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  }
+  
+  /* .Pesan {
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+  } */
+  
